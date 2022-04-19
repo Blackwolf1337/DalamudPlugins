@@ -1,25 +1,27 @@
-{
-  "Author": "akira0245",
-  "Name": "MidiBard",
-  "InternalName": "MidiBard",
-  "AssemblyVersion": "1.9.3.0",
-  "Description": "Bard performance using midi files or keyboard.\n- Solo and ensemble mode support\n- Text commands for instrument equip and switch",
-  "ApplicableVersion": "any",
-  "RepoUrl": "https://github.com/akira0245/MidiBard",
-  "Tags": [
-    "akira",
-    "perform",
-    "instrument"
-  ],
-  "DalamudApiLevel": 5,
-  "LoadPriority": 0,
-  "IconUrl": "https://i.loli.net/2021/09/09/L1fkrwElUKYMtN3.png",
-  "Punchline": "Bard performance using midi files or keyboard.",
-  "IsHide": "False",
-  "IsTestingExclusive": "False",
-  "DownloadCount": 0,
-  "LastUpdate": "1650398749",
-  "DownloadLinkInstall": "https://kamori.goats.dev/Plugin/Download/MidiBard?isUpdate=False&isTesting=False&branch=api6",
-  "DownloadLinkTesting": "https://kamori.goats.dev/Plugin/Download/MidiBard?isUpdate=False&isTesting=True&branch=api6",
-  "DownloadLinkUpdate": "https://raw.githubusercontent.com/goatcorp/DalamudPlugins/api6/plugins/MidiBard/latest.zip"
-}
+[
+  {
+    "Author": "akira0245",
+    "Name": "MidiBard",
+    "InternalName": "MidiBard",
+    "AssemblyVersion": "1.9.3.0",
+    "Description": "Bard performance using midi files or keyboard.\n- Solo and ensemble mode support\n- Text commands for instrument equip and switch",
+    "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/akira0245/MidiBard",
+    "Tags": [
+      "akira",
+      "perform",
+      "instrument"
+    ],
+    "DalamudApiLevel": 5,
+    "LoadPriority": 0,
+    "IconUrl": "https://i.loli.net/2021/09/09/L1fkrwElUKYMtN3.png",
+    "Punchline": "Bard performance using midi files or keyboard.",
+    "IsHide": "False",
+    "IsTestingExclusive": "False",
+    "DownloadCount": 0,
+    "LastUpdate": "1650398749",
+    "DownloadLinkInstall": "https://kamori.goats.dev/Plugin/Download/MidiBard?isUpdate=False&isTesting=False&branch=api6",
+    "DownloadLinkTesting": "https://kamori.goats.dev/Plugin/Download/MidiBard?isUpdate=False&isTesting=True&branch=api6",
+    "DownloadLinkUpdate": "https://raw.githubusercontent.com/goatcorp/DalamudPlugins/api6/plugins/MidiBard/latest.zip"
+  }
+]
