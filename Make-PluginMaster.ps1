@@ -11,8 +11,8 @@ $pluginBlacklistUrl = "https://goatcorp.github.io/DalamudAssets/UIRes/bannedplug
 $wc = New-Object system.Net.WebClient
 $blackList = $wc.downloadString($pluginBlacklistUrl) | ConvertFrom-Json
 
-$dlTemplateInstall = "https://raw.githubusercontent.com/Blackwolf1337/DalamudPlugins/api6/{0}/{1}/latest.zip"
-$dlTemplateUpdate = "https://raw.githubusercontent.com/Blackwolf1337/DalamudPlugins/api6/{0}/{1}/latest.zip"
+$dlTemplateInstall = "https://raw.githubusercontent.com/Blackwolf1337/DalamudPlugins/api6/{0}/latest.zip"
+$dlTemplateUpdate = "https://raw.githubusercontent.com/Blackwolf1337/DalamudPlugins/api6/{0}/latest.zip"
 
 $apiLevel = 6
 
