@@ -11,8 +11,8 @@ $pluginBlacklistUrl = "https://goatcorp.github.io/DalamudAssets/UIRes/bannedplug
 $wc = New-Object system.Net.WebClient
 $blackList = $wc.downloadString($pluginBlacklistUrl) | ConvertFrom-Json
 
-$dlTemplateInstall = "https://raw.githubusercontent.com/Blackwolf1337/DalamudPlugins/api6/{0}/latest.zip"
-$dlTemplateUpdate = "https://raw.githubusercontent.com/Blackwolf1337/DalamudPlugins/api6/{0}/latest.zip"
+$dlTemplateInstall = "https://github.com/Blackwolf1337/DalamudPlugins/raw/api6/plugins/{0}/latest.zip"
+$dlTemplateUpdate = "https://github.com/Blackwolf1337/DalamudPlugins/raw/api6/plugins/{0}/latest.zip"
 
 $apiLevel = 6
 
@@ -40,26 +40,26 @@ Get-ChildItem -Path plugins -File -Recurse -Include *.json |
 Foreach-Object {
     $content = Get-Content $_.FullName | ConvertFrom-Json
 
-    $isBanned = Is-Banned -PluginName $content.InternalName -AssemblyVersion $content.AssemblyVersion
-    if ($notInclude.Contains($content.InternalName) -or $isBanned) { 
-    	$content | add-member -Force -Name "IsHide" -value "True" -MemberType NoteProperty
-    }
-    else
-    {
-    	$content | add-member -Force -Name "IsHide" -value "False" -MemberType NoteProperty
-        
-        $newDesc = $content.Description -replace "\n", "<br>"
-        $newDesc = $newDesc -replace "\|", "I"
-        
-        if ($content.DalamudApiLevel -eq $apiLevel) {
-            if ($content.RepoUrl) {
-                $table = $table + "| " + $content.Author + " | [" + $content.Name + "](" + $content.RepoUrl + ") | " + $newDesc + " |`n"
-            }
-            else {
-                $table = $table + "| " + $content.Author + " | " + $content.Name + " | " + $newDesc + " |`n"
-            }
+    # $isBanned = Is-Banned -PluginName $content.InternalName -AssemblyVersion $content.AssemblyVersion
+    # if ($notInclude.Contains($content.InternalName) -or $isBanned) { 
+    # 	$content | add-member -Force -Name "IsHide" -value "True" -MemberType NoteProperty
+    # }
+    # else
+    # {
+    $content | add-member -Force -Name "IsHide" -value "False" -MemberType NoteProperty
+    
+    $newDesc = $content.Description -replace "\n", "<br>"
+    $newDesc = $newDesc -replace "\|", "I"
+    
+    if ($content.DalamudApiLevel -eq $apiLevel) {
+        if ($content.RepoUrl) {
+            $table = $table + "| " + $content.Author + " | [" + $content.Name + "](" + $content.RepoUrl + ") | " + $newDesc + " |`n"
+        }
+        else {
+            $table = $table + "| " + $content.Author + " | " + $content.Name + " | " + $newDesc + " |`n"
         }
     }
+    # }
 
     $testingPath = Join-Path $thisPath -ChildPath "testing" | Join-Path -ChildPath $content.InternalName | Join-Path -ChildPath $_.Name
     if ($testingPath | Test-Path)
@@ -158,7 +158,7 @@ Foreach-Object {
     }
 }
 
-$outputStr = $output | ConvertTo-Json
+$outputStr = $output | ConvertTo-Json -AsArray
 
 Out-File -FilePath .\pluginmaster.json -InputObject $outputStr
 
