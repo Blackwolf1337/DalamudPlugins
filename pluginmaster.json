@@ -23,5 +23,30 @@
     "DownloadLinkInstall": "https://github.com/Blackwolf1337/DalamudPlugins/raw/api6/plugins/MidiBard/latest.zip",
     "DownloadLinkTesting": "https://github.com/Blackwolf1337/DalamudPlugins/raw/api6/plugins/MidiBard/latest.zip",
     "DownloadLinkUpdate": "https://github.com/Blackwolf1337/DalamudPlugins/raw/api6/plugins/MidiBard/latest.zip"
+  },
+  {
+    "Author": "akira0245, semi-continued by Blackwolf",
+    "Name": "MidiBard (API 6)",
+    "InternalName": "RoleplayersToolbox",
+    "AssemblyVersion": "0.3.3",
+    "Description": "Bard performance using midi files or keyboard.\n- Solo and ensemble mode support\n- Text commands for instrument equip and switch",
+    "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/Blackwolf1337/MidiBard",
+    "Tags": [
+      "akira",
+      "perform",
+      "instrument"
+    ],
+    "DalamudApiLevel": 6,
+    "LoadPriority": 0,
+    "IconUrl": "https://i.loli.net/2021/09/09/L1fkrwElUKYMtN3.png",
+    "Punchline": "Bard performance using midi files or keyboard.",
+    "IsHide": "False",
+    "IsTestingExclusive": "False",
+    "DownloadCount": 0,
+    "LastUpdate": "1650475746",
+    "DownloadLinkInstall": "https://github.com/Blackwolf1337/DalamudPlugins/raw/api6/plugins/RoleplayersToolbox/latest.zip",
+    "DownloadLinkTesting": "https://github.com/Blackwolf1337/DalamudPlugins/raw/api6/plugins/RoleplayersToolbox/latest.zip",
+    "DownloadLinkUpdate": "https://github.com/Blackwolf1337/DalamudPlugins/raw/api6/plugins/RoleplayersToolbox/latest.zip"
   }
 ]
