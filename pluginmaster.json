@@ -1,5 +1,31 @@
 [
   {
+    "Author": "Haplo064",
+    "Name": "Chat Bubbles",
+    "InternalName": "ChatBubbles",
+    "AssemblyVersion": "1.6.0",
+    "Description": "Enables in-game chat bubbles.",
+    "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/Blackwolf1337/ChatBubbles",
+    "Tags": [
+      "UI",
+      "Roleplay",
+      "RP",
+      "Bubbles",
+      "Chat"
+    ],
+    "DalamudApiLevel": 6,
+    "LoadPriority": 0,
+    "Punchline": "Enables in-game chat bubbles.",
+    "IsHide": "False",
+    "IsTestingExclusive": "False",
+    "DownloadCount": 0,
+    "LastUpdate": "1650757191",
+    "DownloadLinkInstall": "https://github.com/Blackwolf1337/DalamudPlugins/raw/api6/plugins/ChatBubbles/latest.zip",
+    "DownloadLinkTesting": "https://github.com/Blackwolf1337/DalamudPlugins/raw/api6/plugins/ChatBubbles/latest.zip",
+    "DownloadLinkUpdate": "https://github.com/Blackwolf1337/DalamudPlugins/raw/api6/plugins/ChatBubbles/latest.zip"
+  },
+  {
     "Author": "akira0245, semi-continued by Blackwolf",
     "Name": "MidiBard (API 6)",
     "InternalName": "MidiBard",
